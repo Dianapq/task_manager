@@ -6,3 +6,5 @@ def list_tasks():
     for idx, task in enumerate(tasks, 1):
         status = "✅" if task["completed"] else "❌"
         print(f"{idx}. {task['description']} [{status}] - ID: {task['id']}")
+        
+        #Estoy probando la subida
