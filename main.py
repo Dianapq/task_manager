@@ -5,13 +5,13 @@ task_list = []
 
 # Intentar importar funciones individualmente
 try:
-    from Create_Task import create_task
+    from createTask import create_task
 except ImportError:
     create_task = None
     print(" Módulo 'create_task' no disponible.")
 
 try:
-    from List_All_Tasks import list_all_tasks
+    from Listar_tareas import list_all_tasks
 except ImportError:
     List_All_Tasks = None
     print(" Módulo 'list_all_tasks' no disponible.")
@@ -23,7 +23,7 @@ except ImportError:
     print(" Módulo 'mark_task_as_completed' no disponible.")
 
 try:
-    from Delete_Task import delete_task
+    from deleteTask import delete_task
 except ImportError:
     delete_task = None
     print(" Módulo 'delete_task' no disponible.")
