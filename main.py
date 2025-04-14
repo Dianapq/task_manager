@@ -11,10 +11,10 @@ except ImportError:
     print(" Módulo 'create_task' no disponible.")
 
 try:
-    from Listar_tareas import list_all_tasks
+    from Listar_tareas import list_tasks
 except ImportError:
     List_All_Tasks = None
-    print(" Módulo 'list_all_tasks' no disponible.")
+    print(" Módulo 'list_tasks' no disponible.")
 
 try:
     from markTaskAsCompleted import mark_task_as_completed
@@ -48,8 +48,8 @@ def main():
                 print(" Función de crear no disponible.")
 
         elif choice == "2":
-            if list_all_tasks:
-                list_all_tasks(task_list)
+            if list_tasks:
+                list_tasks(task_list)
             else:
                 print(" Función de listar no disponible.")
 
