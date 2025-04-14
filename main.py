@@ -13,7 +13,7 @@ except ImportError:
 try:
     from Listar_tareas import list_tasks
 except ImportError:
-    List_All_Tasks = None
+    list_tasks = None
     print(" Módulo 'list_tasks' no disponible.")
 
 try:
